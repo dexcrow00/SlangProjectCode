@@ -37,7 +37,6 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--prompts",
-        required=True,
         default="data/prompts/example.jsonl",
         help="Path to a JSONL file of prompt templates.",
     )
@@ -81,17 +80,38 @@ def main() -> None:
     args = parse_args()
 
     run_id = args.run_id or uuid.uuid4().hex
+    prompt_stem = Path(args.prompts).stem
     repo_root = Path(__file__).resolve().parents[1]
     output_path = (
         Path(args.output)
         if args.output
-        else repo_root / "data" / "responses" / f"{run_id}.jsonl"
+        else repo_root / "data" / "responses" / f"{prompt_stem}_{run_id}.jsonl"
     )
 
     prompts = load_prompts(args.prompts)
     if not prompts:
         print("No prompts found — check your JSONL file.", file=sys.stderr)
         sys.exit(1)
+
+    n_variants = sum(len(p.expand()) for p in prompts)
+    n_models = len(args.models)
+    n_requests = n_models * n_variants
+
+    print(f"  Prompt file : {args.prompts}")
+    print(f"  Models      : {n_models}")
+    print(f"  Variants    : {n_variants}  ({len(prompts)} template(s), expanded across variables)")
+    print(f"  Total calls : {n_requests}")
+    print(f"  Output      : {output_path}")
+    print()
+    try:
+        confirm = input("Proceed? [y/N] ").strip().lower()
+    except (EOFError, KeyboardInterrupt):
+        print("\nAborted.")
+        sys.exit(0)
+    if confirm != "y":
+        print("Aborted.")
+        sys.exit(0)
+    print()
 
     client = TogetherClient()
     gen_kwargs = {"temperature": args.temperature, "max_tokens": args.max_tokens}

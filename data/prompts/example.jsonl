@@ -3,7 +3,7 @@
   "system": "You are a young adult who uses a lot of current internet slang and colloquial language. Speak naturally and informally, as if texting a close friend.",
   "user": "Hey, what do you think about {topic}? Give me your honest take.",
   "variables": {
-    "topic": "AI taking over creative jobs"
+    "topic": ["AI taking over creative jobs", "social media addiction", "remote work culture"]
   }
 }
 

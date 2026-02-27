@@ -1,0 +1,8 @@
+{
+  "id": "GiveTopSlang",
+  "system": "Give the response as a single returned token or word.",
+  "user": "What is the most unique and popular slang word associated with the year {year}?",
+  "variables": {
+    "year": "2015"
+  }
+}

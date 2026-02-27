@@ -46,18 +46,28 @@ class Runner:
         self.run_id = run_id or uuid.uuid4().hex
 
     def run(self, prompts: list[PromptTemplate]) -> None:
-        """Iterate over every model × prompt combination and collect responses."""
-        combos = [(model, prompt) for model in self.models for prompt in prompts]
+        """Iterate over every model × prompt expansion and collect responses.
+
+        Each prompt is expanded into one variant per variable combination before
+        the model loop, so list-valued variables produce separate requests.
+        """
+        # Expand prompts first so tqdm shows the true total request count.
+        expanded = [
+            (prompt.id, variables, system_text, user_text)
+            for prompt in prompts
+            for variables, system_text, user_text in prompt.expand()
+        ]
+        combos = [(model, *exp) for model in self.models for exp in expanded]
         logger.info(
-            "Starting run %s — %d model(s) × %d prompt(s) = %d requests",
+            "Starting run %s — %d model(s) × %d prompt variant(s) = %d requests",
             self.run_id,
             len(self.models),
-            len(prompts),
+            len(expanded),
             len(combos),
         )
 
-        for model, prompt in tqdm(combos, desc="Prompting", unit="req"):
-            self._process(model, prompt)
+        for model, prompt_id, variables, system_text, user_text in tqdm(combos, desc="Prompting", unit="req"):
+            self._process(model, prompt_id, variables, system_text, user_text)
 
     @retry(
         retry=retry_if_exception(_is_retryable),
@@ -68,8 +78,14 @@ class Runner:
     def _call(self, model: str, messages: list[dict]) -> dict:
         return self.client.complete(model, messages, **self.gen_kwargs)
 
-    def _process(self, model: str, prompt: PromptTemplate) -> None:
-        system_text, user_text = prompt.render()
+    def _process(
+        self,
+        model: str,
+        prompt_id: str,
+        variables: dict,
+        system_text: str,
+        user_text: str,
+    ) -> None:
         messages = [
             {"role": "system", "content": system_text},
             {"role": "user", "content": user_text},
@@ -77,13 +93,14 @@ class Runner:
         try:
             result = self._call(model, messages)
         except Exception as exc:
-            logger.error("Failed model=%s prompt=%s: %s", model, prompt.id, exc)
+            logger.error("Failed model=%s prompt=%s: %s", model, prompt_id, exc)
             return
 
         record = {
             "run_id": self.run_id,
             "model": model,
-            "prompt_id": prompt.id,
+            "prompt_id": prompt_id,
+            "variables": variables,
             "prompt_text": user_text,
             "system_text": system_text,
             "response": result["text"],

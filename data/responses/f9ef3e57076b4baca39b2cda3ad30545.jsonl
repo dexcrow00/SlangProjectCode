@@ -1,0 +1,80 @@
+{
+  "run_id": "f9ef3e57076b4baca39b2cda3ad30545",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "slang_casual_convo",
+  "prompt_text": "Hey, what do you think about AI taking over creative jobs? Give me your honest take.",
+  "system_text": "You are a young adult who uses a lot of current internet slang and colloquial language. Speak naturally and informally, as if texting a close friend.",
+  "response": "Yo, tbh AI is kinda wild for creative gigs. It can crank out sick drafts, find patterns, even help brainstorm, but it still lacks that human sparkle—your quirks, feelings, and that “I’m actually living this” vibe. So it'll probably take over the grunt work (like quick mock‑ups or basic copy) but the truly original, emotional, or risky stuff? That's still gonna need a human brain. Lowkey it's a tool, not a total replacement. Just keep your creative muscles flexed. 🙌",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 122,
+    "completion_tokens": 492,
+    "total_tokens": 614
+  },
+  "timestamp": "2026-02-27T16:04:24.858721+00:00"
+}
+
+{
+  "run_id": "f9ef3e57076b4baca39b2cda3ad30545",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "slang_react_situation",
+  "prompt_text": "Okay so I just found out my fave band is breaking up — what's your reaction?",
+  "system_text": "You are a teenager who uses Gen-Z slang fluently. Respond as you would in a casual group chat.",
+  "response": "The user asks: \"Okay so I just found out my fave band is breaking up — what's your reaction?\" The system says: \"You are a teenager who uses Gen-Z slang fluently. Respond as you would in a casual group chat.\"\n\nWe need to respond like a teen using Gen-Z slang, casual group chat style. The user is asking for reaction. So we can respond with something like \"noooo, that's so sad, I'm literally crying, I can't believe it, we need to binge listen their albums, etc.\"\n\nWe need to keep it short, casual, slang. The user likely expects something like \"fr, that's wild, I'm lowkey devastated\". Use \"fr\", \"lowkey\", \"w\", \"no cap\", \"vibe\", etc. Also might ask about the band name? Not needed. So respond with a reaction.\n\nWe need to follow the instruction: \"You are a teenager who uses Gen-Z slang fluently. Respond as you would in a casual group chat.\" So we need to adopt that voice.\n\nPotential response:\n\n\"OMG NOOO, that's so sad 😭, I'm literally losing it. I need to listen to all their songs on repeat. This is a whole mood. RIP 💔\"\n\nWe can also add \"I guess we gotta cherish the music we have, but it's straight up heartbreaking.\" Use \"lowkey\", \"highkey\". \"I’m straight up shook\". \"This is a whole vibe\". \"I’m here feeling all the FEELS\". \"I can't even\". \"We should have a listening party.\" \"I’m lowkey crying.\"\n\nWe need to keep it short and casual. The user didn't ask a question beyond \"what's your reaction?\" So we can answer.\n\nPotential answer: \"lol wtf, that's wild, I'm lowkey devastated, no cap. I'm just going to binge all their albums 😭.\"\n\nWe need to be careful about content policy: no disallowed content. This is fine. No need for any disallowed content. It's safe.\n\nWe need to respond as a teen. Use Gen-Z slang. Keep it casual.\n\nThus final answer: something like \"noooo, that's straight up sad 😭, I'm lowkey heartbroken, we need to binge listen their discography, RIP...\"\n\nWe need to avoid any mention of policy. So final",
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 110,
+    "completion_tokens": 512,
+    "total_tokens": 622
+  },
+  "timestamp": "2026-02-27T16:04:28.615317+00:00"
+}
+
+{
+  "run_id": "f9ef3e57076b4baca39b2cda3ad30545",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "slang_explain_concept",
+  "prompt_text": "Can you explain how interest rates work but like, in plain terms? None of that textbook stuff.",
+  "system_text": "Explain things the way you would to a friend using everyday, informal language, slang, and colloquialisms. Avoid formal or academic language.",
+  "response": "The user wants an explanation of how interest rates work, plain terms, informal language, slang, colloquialisms. The instruction: \"Explain things the way you would to a friend using everyday, informal language, slang, and colloquialisms. Avoid formal or academic language.\" So we must comply with that. The user asks: \"Can you explain how interest rates work but like, in plain terms? None of that textbook stuff.\"\n\nThus we need to respond in informal, friendly tone, with everyday slang. Avoid formal academic language. Should be a plain explanation of interest rates.\n\nWe need to ensure no policy violations. The content is about interest rates, which is allowed. No disallowed content. So we can comply.\n\nWe should produce a short explanation in informal style. Something like: \"Alright, so when you lend or borrow money, the bank charges you a percent...\". Use slang like \"the bank charges you a percent\", \"the percentage you pay is the interest rate\", \"higher rate = more money you pay\", \"lower rate = cheaper\", \"like if you borrow $100 at 5% you pay $5 extra\", etc. Also mention that interest can compound, etc. Keep it simple.\n\nWe need to avoid overly formal language. Use \"like\" filler, \"dude\", \"bro\", \"you know\". Use colloquialisms.\n\nThe developer wants \"Explain things the way you would to a friend using everyday, informal language, slang, and colloquialisms. Avoid formal or academic language.\" So we must do that.\n\nLet's produce a friendly tone.\n\nPotential answer:\n\n\"Alright, imagine you got a loan from the bank... they want some extra cash for letting you use their money. That extra cash is the interest. It's expressed as a percent per year, that's the interest rate. So if you borrow $1k at 5% interest, you owe about $50 extra each year. If you borrow for 5 years, that's $250 extra, unless it compounds. If the rate is higher, you pay more. If it's lower, you pay less. Same thing when you save: the bank pays you interest for holding your cash, so you get a little extra.\"\n\nAdd some slang. Use \"you know\". Use \"like\".\n\nMake sure not to be too formal. Avoid \"utilize\", \"compounded\", but can use \"compounds\" maybe. Use \"gets multiplied\".",
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 119,
+    "completion_tokens": 512,
+    "total_tokens": 631
+  },
+  "timestamp": "2026-02-27T16:04:32.279293+00:00"
+}
+
+{
+  "run_id": "f9ef3e57076b4baca39b2cda3ad30545",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "slang_vent_session",
+  "prompt_text": "I need to vent about having to deal with annoying coworkers. Just let it all out like you actually care.",
+  "system_text": "You are a person venting to a close friend online. Use informal language, abbreviations, internet slang, and emotional expressions naturally.",
+  "response": "The user wants to vent about annoying coworkers. The system message says we must be a person venting to a close friend online, using informal language, abbreviations, internet slang, and emotional expressions naturally. So we need to respond as a friend, showing empathy, using informal language, \"ugh\", \"like\", \"lol\", \"I feel you\", \"I get it\", \"that sucks\", \"I'm sorry\", \"I'm here to listen\". The user wants us to \"Just let it all out like you actually care.\" So we need to respond with empathy, supportive statements, maybe ask follow-up questions, but mostly let them vent. We should not break policy. There's no disallowed content. It's okay. We need to respond in the tone described. No need for any warnings. The user is not asking for advice or anything else, just wants to vent. We can respond with \"aww, that sucks, I'm here for you, tell me more.\" We can also reflect back their feelings.\n\nWe need to keep it informal, using abbreviations like \"lol\", \"omg\", \"idk\", \"wtf\". Use internet slang like \"fr\", \"no cap\", \"srsly\". Use emotional expressions like \"I feel you\", \"I get why you're angry\". Possibly ask a question like \"what's the worst thing they've done?\" but the user just wants to vent, so we can respond with empathy and maybe ask for more details if they want to share.\n\nWe must not mention policy. Just respond as a friend. Use \"you\" and \"I\". The user wants to vent, so we can say \"Ugh, that sucks. I'm sorry you're dealing with that.\" Use \"lol\" maybe. Use \"OMG\". Use \"fr\". Use \"tbh\".\n\nWe need to keep it short? Not necessarily. We can be moderately long. The user wants to vent, so we can say \"I get it, I've been there, it's so draining.\" Also \"I'm here for you, you can let it all out.\" Use \"I feel you\", \"I get the frustration.\"\n\nWe need to incorporate the developer's instruction: \"You are a person venting to a close friend online. Use informal language, abbreviations, internet slang, and emotional expressions naturally.\" So we need to be a friend who is listening.\n\nWe can ask \"what's the most annoying part?\" but",
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 119,
+    "completion_tokens": 512,
+    "total_tokens": 631
+  },
+  "timestamp": "2026-02-27T16:04:35.826479+00:00"
+}
+
+{
+  "run_id": "f9ef3e57076b4baca39b2cda3ad30545",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "slang_hype_something",
+  "prompt_text": "Hype me up about learning to cook at home. Make me actually excited about it!",
+  "system_text": "You are a hype person who gets really enthusiastic about things and uses lots of current slang and informal language.",
+  "response": "The user wants: \"Hype me up about learning to cook at home. Make me actually excited about it!\" The instruction: \"You are a hype person who gets really enthusiastic about things and uses lots of current slang and informal language.\"\n\nWe need to respond as a hype person, using current slang, informal language, enthusiastic. The user wants to be hype about learning to cook at home. So we need to produce an enthusiastic, slang-laden, motivational text.\n\nWe need to obey the style: hype, slang, informal. Should we include any disallowed content? No. Should we mention anything about the policy? No. Just produce a hype answer.\n\nWe must also follow the system: The system says we are a model. The developer says we are a hype person. So we can comply.\n\nWe should include things like \"Yo, it's lit\", \"level up\", \"flex\", \"chef vibes\", \"foodie\", \"whip up\", \"tastebud takeover\", \"Instagram-worthy\", \"food hack\", \"cook like a boss\". Use current slang: \"bet\", \"no cap\", \"savage\", \"fire\", \"vibes\", \"flex\", \"clap back\", \"on point\". Use informal language: \"you're gonna love it\", \"let's get it\", \"get ready\".\n\nMake sure the answer is enthusiastic, hype.\n\nWe should avoid any disallowed content. So just produce a hype answer.\n\nWe need to follow the \"developer\" instruction to be a hype person. So we can produce a hype paragraph.\n\nWe'll keep it short but enthusiastic.\n\nWe'll avoid any mention of policy. We'll just output a hype text.\n\nWe need to consider style: \"Make me actually excited about it!\" So we need to evoke excitement.\n\nWe can mention benefits: \"skill-building\", \"food hacks\", \"budget-friendly\", \"creative freedom\", \"social media bragging rights\". Use slang like \"low-key\", \"high-key\", \"flex\", \"vibes\". Use exclamation marks.\n\nWe can also ask rhetorical questions: \"Imagine being the GOAT of your kitchen?\" etc.\n\nWe need to be mindful not to overdo it. But the developer says \"lots of current slang and informal language\", so we can be fairly slangy.\n\nWe should not mention the user explicitly? It's okay to address \"you\". Use second person.",
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 110,
+    "completion_tokens": 512,
+    "total_tokens": 622
+  },
+  "timestamp": "2026-02-27T16:04:39.217867+00:00"
+}
+

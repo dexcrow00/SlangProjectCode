@@ -1,3 +1,4 @@
 Keys.py
 .env.example
 .vscode/*
+src/__pycache__/*
