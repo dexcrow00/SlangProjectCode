@@ -27,9 +27,7 @@ logging.basicConfig(
 )
 
 DEFAULT_MODELS = [
-    "meta-llama/Llama-3.3-70B-Instruct-Turbo",
-    "mistralai/Mistral-7B-Instruct-v0.3",
-    "Qwen/Qwen2.5-72B-Instruct-Turbo",
+    "ServiceNow-AI/Apriel-1.6-15b-Thinker",
 ]
 
 
@@ -40,6 +38,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--prompts",
         required=True,
+        default="data/prompts/example.jsonl",
         help="Path to a JSONL file of prompt templates.",
     )
     parser.add_argument(
@@ -50,7 +49,6 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output",
-        default=None,
         help=(
             "Output JSONL path. Defaults to data/responses/<run_id>.jsonl "
             "relative to repo root."
