@@ -82,16 +82,19 @@ def main() -> None:
     run_id = args.run_id or uuid.uuid4().hex
     prompt_stem = Path(args.prompts).stem
     repo_root = Path(__file__).resolve().parents[1]
-    output_path = (
-        Path(args.output)
-        if args.output
-        else repo_root / "data" / "responses" / f"{prompt_stem}_{run_id}.jsonl"
-    )
 
     prompts = load_prompts(args.prompts)
     if not prompts:
         print("No prompts found — check your JSONL file.", file=sys.stderr)
         sys.exit(1)
+
+    using_logprobs = any(p.logprobs is not None for p in prompts)
+    if args.output:
+        output_path = Path(args.output)
+    elif using_logprobs:
+        output_path = repo_root / "data" / "responses" / f"{prompt_stem}_logprobs_{run_id}.jsonl"
+    else:
+        output_path = repo_root / "data" / "responses" / f"{prompt_stem}_{run_id}.jsonl"
 
     n_variants = sum(len(p.expand()) for p in prompts)
     n_models = len(args.models)

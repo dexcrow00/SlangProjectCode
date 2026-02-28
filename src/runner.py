@@ -53,7 +53,7 @@ class Runner:
         """
         # Expand prompts first so tqdm shows the true total request count.
         expanded = [
-            (prompt.id, variables, system_text, user_text)
+            (prompt.id, prompt.logprobs, variables, system_text, user_text)
             for prompt in prompts
             for variables, system_text, user_text in prompt.expand()
         ]
@@ -66,8 +66,8 @@ class Runner:
             len(combos),
         )
 
-        for model, prompt_id, variables, system_text, user_text in tqdm(combos, desc="Prompting", unit="req"):
-            self._process(model, prompt_id, variables, system_text, user_text)
+        for model, prompt_id, logprobs, variables, system_text, user_text in tqdm(combos, desc="Prompting", unit="req"):
+            self._process(model, prompt_id, logprobs, variables, system_text, user_text)
 
     @retry(
         retry=retry_if_exception(_is_retryable),
@@ -75,13 +75,14 @@ class Runner:
         wait=wait_exponential(multiplier=1, min=2, max=30),
         reraise=True,
     )
-    def _call(self, model: str, messages: list[dict]) -> dict:
-        return self.client.complete(model, messages, **self.gen_kwargs)
+    def _call(self, model: str, messages: list[dict], **extra_kwargs) -> dict:
+        return self.client.complete(model, messages, **self.gen_kwargs, **extra_kwargs)
 
     def _process(
         self,
         model: str,
         prompt_id: str,
+        logprobs: int | None,
         variables: dict,
         system_text: str,
         user_text: str,
@@ -90,8 +91,9 @@ class Runner:
             {"role": "system", "content": system_text},
             {"role": "user", "content": user_text},
         ]
+        extra = {"logprobs": logprobs} if logprobs is not None else {}
         try:
-            result = self._call(model, messages)
+            result = self._call(model, messages, **extra)
         except Exception as exc:
             logger.error("Failed model=%s prompt=%s: %s", model, prompt_id, exc)
             return
@@ -103,7 +105,8 @@ class Runner:
             "variables": variables,
             "prompt_text": user_text,
             "system_text": system_text,
-            "response": result["text"],
+            "response": result["text"] if logprobs is None else None,
+            "logprobs": result.get("logprobs") if logprobs is not None else None,
             "finish_reason": result.get("finish_reason"),
             "usage": result.get("usage"),
             "timestamp": datetime.now(timezone.utc).isoformat(),

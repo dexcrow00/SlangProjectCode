@@ -14,6 +14,7 @@ class PromptTemplate:
     system: str
     user: str
     variables: dict = field(default_factory=dict)
+    logprobs: int | None = None
 
     def expand(self) -> list[tuple[dict, str, str]]:
         """Return one (variables_used, system, user) tuple per variable combination.
@@ -67,6 +68,7 @@ def load_prompts(path: str | Path) -> list[PromptTemplate]:
                 system=obj["system"],
                 user=obj["user"],
                 variables=obj.get("variables", {}),
+                logprobs=obj.get("logprobs"),
             )
         )
         pos = end

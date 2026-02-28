@@ -4,5 +4,6 @@
   "user": "What is the most unique and popular slang word associated with the year {year}?",
   "variables": {
     "year": "2015"
-  }
+  },
+  "logprobs": 10
 }
