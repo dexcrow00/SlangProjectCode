@@ -20,6 +20,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
+import math
 import numpy as np
 
 
@@ -85,60 +86,66 @@ def render(records: list[dict], output: Path | None = None) -> None:
         for col, pos_data in enumerate(content):
             for row, alt in enumerate(pos_data["top_logprobs"]):
                 token_grid[row, col] = alt["token"]
-                logprob_grid[row, col] = alt["logprob"]
+                # Convert the logprob back to the softmaxed value.
+                logprob_grid[row, col] = math.exp(alt["logprob"])
 
         # --- figure layout ------------------------------------------------
-        cell_w = max(1.4, 60 / n_cols)
-        cell_h = 1.0
-        fig_w = n_cols * cell_w + 4
-        fig_h = n_rows * cell_h + 1.5
+        CELL_W, CELL_H = 2.2, 1.4          # fixed inches per cell
+        fig_w = n_cols * CELL_W + 3        # +3 for y-axis labels
+        fig_h = n_rows * CELL_H + 2        # +2 for title and x-axis labels
 
         fig, ax = plt.subplots(figsize=(fig_w, fig_h))
 
         # --- heatmap ------------------------------------------------------
-        vmin = np.nanmin(logprob_grid)
+        # Values are now probabilities in [0, 1]; fix the scale accordingly.
+        norm = plt.Normalize(vmin=0, vmax=1)
         im = ax.imshow(
             logprob_grid,
             aspect="auto",
             cmap="RdYlGn",
-            vmin=vmin,
-            vmax=0,
+            norm=norm,
             interpolation="nearest",
         )
 
         # --- cell annotations ---------------------------------------------
-        font_size = max(5, min(9, int(cell_w * 5)))
+        cmap = plt.cm.RdYlGn
         for row in range(n_rows):
             for col in range(n_cols):
                 tok = token_grid[row, col]
                 val = logprob_grid[row, col]
                 if tok is None or np.isnan(val):
                     continue
+                # Adaptive text colour: white on dark cells, black on light.
+                r, g, b, _ = cmap(norm(val))
+                text_color = "black" if (0.299 * r + 0.587 * g + 0.114 * b) > 0.45 else "white"
+                # Replace whitespace chars so they render visibly.
+                display = tok.replace(" ", "·").replace("\n", "↵").replace("\t", "→")
                 ax.text(
                     col, row,
-                    f"{repr(tok)}\n{val:.3f}",
+                    f"{display}\n{val:.3f}",
                     ha="center", va="center",
-                    fontsize=font_size,
-                    color="black",
+                    fontsize=10,
+                    color=text_color,
                 )
 
         # --- axes labels --------------------------------------------------
-        selected = [repr(pos["token"]) for pos in content]
+        selected = [pos["token"].replace(" ", "·").replace("\n", "↵") for pos in content]
         ax.set_xticks(range(n_cols))
-        ax.set_xticklabels(selected, fontsize=8, rotation=45, ha="right")
-        ax.set_xlabel("Selected token at each position", fontsize=9)
+        ax.set_xticklabels(selected, fontsize=9, rotation=45, ha="right")
+        ax.set_xlabel("Selected token at each position", fontsize=10)
 
         ax.set_yticks(range(n_rows))
-        ax.set_yticklabels([f"rank {i + 1}" for i in range(n_rows)], fontsize=8)
+        ax.set_yticklabels([f"rank {i + 1}" for i in range(n_rows)], fontsize=10)
 
         title = f"{record.get('prompt_id', '')}  |  {record.get('model', '')}"
         if record.get("variables"):
             title += f"  |  {record['variables']}"
-        ax.set_title(title, fontsize=10, pad=10)
+        ax.set_title(title, fontsize=12, pad=12)
 
         # --- colorbar -----------------------------------------------------
         cbar = fig.colorbar(im, ax=ax, shrink=0.6, pad=0.01)
-        cbar.set_label("log probability", fontsize=9)
+        cbar.set_label("probability", fontsize=10)
+        cbar.ax.tick_params(labelsize=9)
 
         fig.tight_layout()
 
@@ -149,7 +156,7 @@ def render(records: list[dict], output: Path | None = None) -> None:
                 if len(lp_records) > 1
                 else output
             )
-            fig.savefig(out_path, dpi=150, bbox_inches="tight")
+            fig.savefig(out_path, dpi=200, bbox_inches="tight")
             print(f"Saved: {out_path}")
         else:
             plt.show()

@@ -1,0 +1,3325 @@
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2015"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2015?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.12782318890094757,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.12782318890094757,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.1278231143951416,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.127823352813721,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.377822875976562,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.502822875976562,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.0030449714977294207,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.0030449714977294207,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.253045082092285,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.503045082092285,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -8.003045082092285,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.503045082092285,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.0021999699529260397,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.0021999699529260397,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.502200126647949,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -8.00220012664795,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -9.00220012664795,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.00220012664795,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.0011865011183544993,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.0011865011183544993,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.501186370849609,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.501186370849609,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.62618637084961,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -12.00118637084961,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:33.167092+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2016"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2016?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.12792745232582092,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.12792745232582092,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.127927541732788,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.002927303314209,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.377927780151367,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.627927780151367,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.003142064670100808,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.003142064670100808,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.2531418800354,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.5031418800354,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -7.7531418800354,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.503142356872559,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.0021421597339212894,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.0021421597339212894,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.502141952514648,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -8.002141952514648,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -9.252141952514648,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.252141952514648,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.0012699642684310675,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.0012699642684310675,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.376269817352295,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.501269817352295,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.501270294189453,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -11.876270294189453,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:33.293808+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2016"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2016?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "We",
+        "logprob": -2.1279234886169434,
+        "bytes": [
+          87,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "We",
+            "logprob": -2.1279234886169434,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "The",
+            "logprob": -0.12792347371578217,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.002923488616943,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.377923011779785,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.752923011779785,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " need",
+        "logprob": -0.16820701956748962,
+        "bytes": [
+          32,
+          110,
+          101,
+          101,
+          100
+        ],
+        "top_logprobs": [
+          {
+            "token": " need",
+            "logprob": -0.16820701956748962,
+            "bytes": [
+              32,
+              110,
+              101,
+              101,
+              100
+            ]
+          },
+          {
+            "token": " have",
+            "logprob": -1.918207049369812,
+            "bytes": [
+              32,
+              104,
+              97,
+              118,
+              101
+            ]
+          },
+          {
+            "token": " are",
+            "logprob": -4.918207168579102,
+            "bytes": [
+              32,
+              97,
+              114,
+              101
+            ]
+          },
+          {
+            "token": " must",
+            "logprob": -7.918207168579102,
+            "bytes": [
+              32,
+              109,
+              117,
+              115,
+              116
+            ]
+          },
+          {
+            "token": " user",
+            "logprob": -8.918207168579102,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          }
+        ]
+      },
+      {
+        "token": " to",
+        "logprob": -3.158996332786046e-05,
+        "bytes": [
+          32,
+          116,
+          111
+        ],
+        "top_logprobs": [
+          {
+            "token": " to",
+            "logprob": -3.158996332786046e-05,
+            "bytes": [
+              32,
+              116,
+              111
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -10.750031471252441,
+            "bytes": [
+              32,
+              97
+            ]
+          },
+          {
+            "token": " answer",
+            "logprob": -12.500031471252441,
+            "bytes": [
+              32,
+              97,
+              110,
+              115,
+              119,
+              101,
+              114
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -13.000031471252441,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " the",
+            "logprob": -13.250031471252441,
+            "bytes": [
+              32,
+              116,
+              104,
+              101
+            ]
+          }
+        ]
+      },
+      {
+        "token": " respond",
+        "logprob": -2.3539693355560303,
+        "bytes": [
+          32,
+          114,
+          101,
+          115,
+          112,
+          111,
+          110,
+          100
+        ],
+        "top_logprobs": [
+          {
+            "token": " respond",
+            "logprob": -2.3539693355560303,
+            "bytes": [
+              32,
+              114,
+              101,
+              115,
+              112,
+              111,
+              110,
+              100
+            ]
+          },
+          {
+            "token": " answer",
+            "logprob": -0.8539692759513855,
+            "bytes": [
+              32,
+              97,
+              110,
+              115,
+              119,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " parse",
+            "logprob": -1.1039693355560303,
+            "bytes": [
+              32,
+              112,
+              97,
+              114,
+              115,
+              101
+            ]
+          },
+          {
+            "token": " interpret",
+            "logprob": -2.3539693355560303,
+            "bytes": [
+              32,
+              105,
+              110,
+              116,
+              101,
+              114,
+              112,
+              114,
+              101,
+              116
+            ]
+          },
+          {
+            "token": " understand",
+            "logprob": -3.3539693355560303,
+            "bytes": [
+              32,
+              117,
+              110,
+              100,
+              101,
+              114,
+              115,
+              116,
+              97,
+              110,
+              100
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:33.417313+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2017"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2017?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.12781228125095367,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.12781228125095367,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.127812385559082,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.127812385559082,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.502812385559082,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.752812385559082,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.003297370159998536,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.003297370159998536,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.253297328948975,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.253297328948975,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -7.753297328948975,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.503297805786133,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.0021642851643264294,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.0021642851643264294,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.502164363861084,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -8.002163887023926,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.002163887023926,
+            "bytes": [
+              39,
+              115
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -9.252163887023926,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.0012042421149089932,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.0012042421149089932,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.376204013824463,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.626204013824463,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.501204490661621,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -12.001204490661621,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:33.540086+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2018"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2018?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.12780576944351196,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.12780576944351196,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.127805709838867,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.127805709838867,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.627805709838867,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.752805709838867,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.0032027876004576683,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.0032027876004576683,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.25320291519165,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.50320291519165,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -7.75320291519165,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.253202438354492,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.002193784574046731,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.002193784574046731,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.502193927764893,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -8.002193450927734,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -9.002193450927734,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.252193450927734,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.0011950739426538348,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.0011950739426538348,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.376194953918457,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.626194953918457,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.626194953918457,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -12.001194953918457,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:33.756408+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2019"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2019?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.1278088092803955,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.1278088092803955,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.1278088092803955,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.127808570861816,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.502808570861816,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.752808570861816,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.002617269055917859,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.002617269055917859,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.502617359161377,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.502617359161377,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -8.002616882324219,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.502616882324219,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.002261701738461852,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.002261701738461852,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.502261638641357,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -7.752261638641357,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -9.252262115478516,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.252262115478516,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.001260558608919382,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.001260558608919382,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.376260757446289,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.501260757446289,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.626260757446289,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -12.001260757446289,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:33.919161+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2020"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2020?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.12803339958190918,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.12803339958190918,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.128033399581909,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -6.878033638000488,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.503033638000488,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -11.003033638000488,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.0030769407749176025,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.0030769407749176025,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.253077030181885,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -7.753077030181885,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.753077030181885,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.253076553344727,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.002191048813983798,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.002191048813983798,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.502191066741943,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -8.002190589904785,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -9.002190589904785,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.252190589904785,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.0012054328108206391,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.0012054328108206391,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.3762054443359375,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.6262054443359375,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.501205444335938,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -11.751205444335938,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:34.038742+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2021"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2021?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.12780094146728516,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.12780094146728516,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.127800941467285,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.127800941467285,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.627800941467285,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.877800941467285,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.003202312160283327,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.003202312160283327,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.253202438354492,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.503202438354492,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -7.753202438354492,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.253202438354492,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.0022619394585490227,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.0022619394585490227,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.502262115478516,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -7.752262115478516,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -9.252262115478516,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.252262115478516,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.0011945976875722408,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.0011945976875722408,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.376194477081299,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.626194477081299,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.626194953918457,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -12.001194953918457,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:34.150854+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2022"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2022?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.10110601782798767,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.10110601782798767,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.3511059284210205,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.1011061668396,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.476105690002441,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.851105690002441,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.0030194190330803394,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.0030194190330803394,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.253019332885742,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -7.753019332885742,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.753019332885742,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.503019332885742,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.0022730010095983744,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.0022730010095983744,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.502273082733154,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -7.752273082733154,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -9.252272605895996,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.252272605895996,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.001260320539586246,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.001260320539586246,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.376260280609131,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.501260280609131,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.626260757446289,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -12.001260757446289,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:34.314068+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2023"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2023?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.10100893676280975,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.10100893676280975,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.351008892059326,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.226008892059326,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.476009368896484,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.851009368896484,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.0037515040021389723,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.0037515040021389723,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.003751277923584,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -7.503751277923584,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.753751277923584,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.253751754760742,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.0022809698712080717,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.0022809698712080717,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.502281188964844,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -7.752281188964844,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -9.252281188964844,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.252281188964844,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.0011956692906096578,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.0011956692906096578,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.376195907592773,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.626195907592773,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.626195907592773,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -12.001195907592773,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:34.433755+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2024"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2024?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.10093091428279877,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.10093091428279877,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.35093092918396,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.350930690765381,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.350931167602539,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.725931167602539,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.003761004889383912,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.003761004889383912,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -6.003760814666748,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -7.503760814666748,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -7.753760814666748,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.253761291503906,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.0020503229461610317,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.0020503229461610317,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.752050399780273,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -7.502050399780273,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " wants",
+            "logprob": -9.252050399780273,
+            "bytes": [
+              32,
+              119,
+              97,
+              110,
+              116,
+              115
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.252050399780273,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.0014490114990621805,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.0014490114990621805,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.126449108123779,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.501449108123779,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.501448631286621,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -11.876448631286621,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:34.548639+00:00"
+}
+
+{
+  "run_id": "2de718962e81499aa9d6c0de9e19f730",
+  "model": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "prompt_id": "GiveTopSlang",
+  "variables": {
+    "year": "2025"
+  },
+  "prompt_text": "What is the most unique and popular slang word associated with the year 2025?",
+  "system_text": "Give the response as a single returned token or word.",
+  "response": null,
+  "logprobs": {
+    "token_ids": null,
+    "token_logprobs": null,
+    "tokens": null,
+    "content": [
+      {
+        "token": "The",
+        "logprob": -0.12757211923599243,
+        "bytes": [
+          84,
+          104,
+          101
+        ],
+        "top_logprobs": [
+          {
+            "token": "The",
+            "logprob": -0.12757211923599243,
+            "bytes": [
+              84,
+              104,
+              101
+            ]
+          },
+          {
+            "token": "We",
+            "logprob": -2.1275720596313477,
+            "bytes": [
+              87,
+              101
+            ]
+          },
+          {
+            "token": "User",
+            "logprob": -7.502572059631348,
+            "bytes": [
+              85,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": "Ok",
+            "logprob": -10.252572059631348,
+            "bytes": [
+              79,
+              107
+            ]
+          },
+          {
+            "token": "First",
+            "logprob": -10.627572059631348,
+            "bytes": [
+              70,
+              105,
+              114,
+              115,
+              116
+            ]
+          }
+        ]
+      },
+      {
+        "token": " user",
+        "logprob": -0.004810308571904898,
+        "bytes": [
+          32,
+          117,
+          115,
+          101,
+          114
+        ],
+        "top_logprobs": [
+          {
+            "token": " user",
+            "logprob": -0.004810308571904898,
+            "bytes": [
+              32,
+              117,
+              115,
+              101,
+              114
+            ]
+          },
+          {
+            "token": " prompt",
+            "logprob": -5.754810333251953,
+            "bytes": [
+              32,
+              112,
+              114,
+              111,
+              109,
+              112,
+              116
+            ]
+          },
+          {
+            "token": " conversation",
+            "logprob": -7.004810333251953,
+            "bytes": [
+              32,
+              99,
+              111,
+              110,
+              118,
+              101,
+              114,
+              115,
+              97,
+              116,
+              105,
+              111,
+              110
+            ]
+          },
+          {
+            "token": " task",
+            "logprob": -8.004810333251953,
+            "bytes": [
+              32,
+              116,
+              97,
+              115,
+              107
+            ]
+          },
+          {
+            "token": " question",
+            "logprob": -8.004810333251953,
+            "bytes": [
+              32,
+              113,
+              117,
+              101,
+              115,
+              116,
+              105,
+              111,
+              110
+            ]
+          }
+        ]
+      },
+      {
+        "token": " asks",
+        "logprob": -0.0022074636071920395,
+        "bytes": [
+          32,
+          97,
+          115,
+          107,
+          115
+        ],
+        "top_logprobs": [
+          {
+            "token": " asks",
+            "logprob": -0.0022074636071920395,
+            "bytes": [
+              32,
+              97,
+              115,
+              107,
+              115
+            ]
+          },
+          {
+            "token": ":",
+            "logprob": -6.752207279205322,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " is",
+            "logprob": -7.252207279205322,
+            "bytes": [
+              32,
+              105,
+              115
+            ]
+          },
+          {
+            "token": " wants",
+            "logprob": -9.25220775604248,
+            "bytes": [
+              32,
+              119,
+              97,
+              110,
+              116,
+              115
+            ]
+          },
+          {
+            "token": "'s",
+            "logprob": -9.25220775604248,
+            "bytes": [
+              39,
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -0.0015018623089417815,
+        "bytes": [
+          58
+        ],
+        "top_logprobs": [
+          {
+            "token": ":",
+            "logprob": -0.0015018623089417815,
+            "bytes": [
+              58
+            ]
+          },
+          {
+            "token": " \"",
+            "logprob": -7.00150203704834,
+            "bytes": [
+              32,
+              34
+            ]
+          },
+          {
+            "token": ":\n\n",
+            "logprob": -7.62650203704834,
+            "bytes": [
+              58,
+              10,
+              10
+            ]
+          },
+          {
+            "token": ",",
+            "logprob": -9.37650203704834,
+            "bytes": [
+              44
+            ]
+          },
+          {
+            "token": " a",
+            "logprob": -11.87650203704834,
+            "bytes": [
+              32,
+              97
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 100,
+    "completion_tokens": 4,
+    "total_tokens": 104
+  },
+  "timestamp": "2026-02-28T17:25:34.673142+00:00"
+}
+
