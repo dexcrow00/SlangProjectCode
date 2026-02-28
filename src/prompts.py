@@ -14,7 +14,6 @@ class PromptTemplate:
     system: str
     user: str
     variables: dict = field(default_factory=dict)
-    logprobs: int | None = None
 
     def expand(self) -> list[tuple[dict, str, str]]:
         """Return one (variables_used, system, user) tuple per variable combination.
@@ -41,14 +40,16 @@ class PromptTemplate:
         return results
 
 
-def load_prompts(path: str | Path) -> list[PromptTemplate]:
+def load_prompts(path: str | Path) -> list[tuple[PromptTemplate, int | None]]:
     """Load prompt templates from a JSONL file.
 
     Supports both compact (one object per line) and pretty-printed (multi-line)
     formats. Each record must have at least 'id', 'system', 'user'.
-    An optional 'variables' key holds default interpolation values.
+
+    Returns a list of (template, logprobs) pairs. logprobs is the integer value
+    from the JSON 'logprobs' field, or None if not specified.
     """
-    templates: list[PromptTemplate] = []
+    results: list[tuple[PromptTemplate, int | None]] = []
     decoder = json.JSONDecoder()
     text = Path(path).read_text(encoding="utf-8")
     pos = 0
@@ -62,14 +63,12 @@ def load_prompts(path: str | Path) -> list[PromptTemplate]:
             obj, end = decoder.raw_decode(text, pos)
         except json.JSONDecodeError as exc:
             raise ValueError(f"Invalid JSON in {path} at position {pos}: {exc}") from exc
-        templates.append(
-            PromptTemplate(
-                id=obj["id"],
-                system=obj["system"],
-                user=obj["user"],
-                variables=obj.get("variables", {}),
-                logprobs=obj.get("logprobs"),
-            )
+        template = PromptTemplate(
+            id=obj["id"],
+            system=obj["system"],
+            user=obj["user"],
+            variables=obj.get("variables", {}),
         )
+        results.append((template, obj.get("logprobs")))
         pos = end
-    return templates
+    return results

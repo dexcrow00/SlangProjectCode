@@ -88,7 +88,7 @@ def main() -> None:
         print("No prompts found — check your JSONL file.", file=sys.stderr)
         sys.exit(1)
 
-    using_logprobs = any(p.logprobs is not None for p in prompts)
+    using_logprobs = any(logprobs is not None for _, logprobs in prompts)
     if args.output:
         output_path = Path(args.output)
     elif using_logprobs:
@@ -96,7 +96,7 @@ def main() -> None:
     else:
         output_path = repo_root / "data" / "responses" / f"{prompt_stem}_{run_id}.jsonl"
 
-    n_variants = sum(len(p.expand()) for p in prompts)
+    n_variants = sum(len(template.expand()) for template, _ in prompts)
     n_models = len(args.models)
     n_requests = n_models * n_variants
 

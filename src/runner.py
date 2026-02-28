@@ -45,7 +45,7 @@ class Runner:
         self.gen_kwargs = gen_kwargs or {}
         self.run_id = run_id or uuid.uuid4().hex
 
-    def run(self, prompts: list[PromptTemplate]) -> None:
+    def run(self, prompts: list[tuple[PromptTemplate, int | None]]) -> None:
         """Iterate over every model × prompt expansion and collect responses.
 
         Each prompt is expanded into one variant per variable combination before
@@ -53,9 +53,9 @@ class Runner:
         """
         # Expand prompts first so tqdm shows the true total request count.
         expanded = [
-            (prompt.id, prompt.logprobs, variables, system_text, user_text)
-            for prompt in prompts
-            for variables, system_text, user_text in prompt.expand()
+            (template.id, logprobs, variables, system_text, user_text)
+            for template, logprobs in prompts
+            for variables, system_text, user_text in template.expand()
         ]
         combos = [(model, *exp) for model in self.models for exp in expanded]
         logger.info(

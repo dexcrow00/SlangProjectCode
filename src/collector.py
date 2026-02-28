@@ -8,6 +8,16 @@ from types import TracebackType
 from typing import IO
 
 
+class _ModelEncoder(json.JSONEncoder):
+    """Extends the default encoder to handle Pydantic model objects returned by
+    the Together SDK (e.g. the logprobs field), converting them via model_dump()."""
+
+    def default(self, obj):
+        if hasattr(obj, "model_dump"):
+            return obj.model_dump()
+        return super().default(obj)
+
+
 class ResponseCollector:
     """Context manager that appends one JSON record per line to *output_path*."""
 
@@ -34,5 +44,5 @@ class ResponseCollector:
         """Append *record* as a pretty-printed JSON block and flush immediately."""
         if self._fh is None:
             raise RuntimeError("ResponseCollector must be used as a context manager.")
-        self._fh.write(json.dumps(record, ensure_ascii=False, indent=2) + "\n\n")
+        self._fh.write(json.dumps(record, ensure_ascii=False, indent=2, cls=_ModelEncoder) + "\n\n")
         self._fh.flush()
