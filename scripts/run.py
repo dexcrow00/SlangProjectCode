@@ -27,7 +27,7 @@ logging.basicConfig(
 )
 
 DEFAULT_MODELS = [
-    "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+    "meta-llama/Llama-3.2-3B-Instruct-Turbo",
 ]
 
 
